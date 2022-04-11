@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/donuts"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/donut_circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleText" />
+
+    <ImageView
+        android:id="@+id/froyo"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/froyo_circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ice_cream"
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+    <ImageView
+        android:id="@+id/ice_cream"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/icecream_circle"
+        app:layout_constraintStart_toEndOf="@id/donuts"
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+    <TextView
+
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/donuts"
+        app:layout_constraintEnd_toEndOf="@id/donuts"
+        app:layout_constraintStart_toStartOf="@id/donuts"
+        app:layout_constraintTop_toBottomOf="@id/donuts" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ice_cream"
+        app:layout_constraintEnd_toEndOf="@id/ice_cream"
+        app:layout_constraintStart_toStartOf="@id/ice_cream"
+        app:layout_constraintTop_toBottomOf="@id/ice_cream"
+
+        tools:layout_editor_absoluteX="302dp"
+        tools:layout_editor_absoluteY="318dp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/froyo"
+        app:layout_constraintEnd_toEndOf="@id/froyo"
+        app:layout_constraintStart_toStartOf="@id/froyo"
+        app:layout_constraintTop_toBottomOf="@id/froyo"
+
+        tools:layout_editor_absoluteX="442dp"
+        tools:layout_editor_absoluteY="318dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
